@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Feed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="feed-page">
+    <div class="topbar">
+      <h2>MiniSocial</h2>
+      <div class="user-info">
+        <span id="pname"></span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div class="feed-layout">
+      <div class="sidebar">
+        <div class="profile-box">
+          <h3 id="pname2"></h3>
+          <p id="pemail"></p>
+        </div>
+      </div>
+
+      <div class="center-feed">
+        <div class="create-post">
+          <textarea id="post"></textarea>
+          <button onclick="createPost()">Post</button>
+        </div>
+        <div id="feed"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
